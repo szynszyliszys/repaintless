@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christmas Card from Lunar Logic</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="sparkle-1"></div>
+    <div class="sparkle-2"></div>
+    <div class="sparkle-3"></div>
+    <div class="sparkle-4"></div>
+    <div class="sparkle-5"></div>
+
+    <div class="vader-container">
+      <img src="img/vader-body.png" class="vader-body" />
+      <img src="img/vader-head.png" class="vader-head" />
+    </div>
+
+    <div class="sparkle-6"></div>
+    <div class="sparkle-7"></div>
+    <div class="sparkle-8"></div>
+    <div class="sparkle-9"></div>
+    <div class="sparkle-10"></div>
+  </div>
+  <audio id="player" src="audio/jingle-bells.mp3"></audio>
+  <div class="audio-controls">
+    <h1 class="vader-music">Play music to make Darth Vader happy</h1>
+    <button value="play music" onclick="document.getElementById('player').play(); var c = document.getElementsByClassName('vader-head'); c[0].className = 'vader-head vader-head-swing';">
+      Play
+      <span aria-hidden="true">&#9654</span>
+    </button>
+    <button value="pause music" onclick="document.getElementById('player').pause(); var c = document.getElementsByClassName('vader-head'); c[0].className = 'vader-head';">
+      Pause
+      <span aria-hidden="true"><b>ll</b></span>
+    </button>
+  </div>
+  <footer>
+    <p>From <a href="http://lunarlogic.io">Lunar Logic</a> with &#9825</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.test {
+  width: 80%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}

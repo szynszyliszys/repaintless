@@ -1,0 +1,14 @@
+@keyframes slide-from-top {
+
+  0% {
+    transform: translateY(-500px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.slide-from-top {
+  animation-name: slide-from-top;
+}

@@ -1,4 +1,15 @@
-.test {
-  width: percentage(8/10);
-  display: flex;
-}
+@import 'config/normalize';
+@import 'config/variables';
+@import 'config/page-config';
+
+@import 'animations/animation-setup';
+
+@import 'animations/slide-from-right';
+@import 'animations/slide-from-left';
+@import 'animations/slide-from-top';
+@import 'animations/slide-from-bottom';
+@import 'animations/slide-left-right';
+@import 'animations/slide-from-right-bottom';
+@import 'animations/tremble';
+
+@import 'demo-page-styles';

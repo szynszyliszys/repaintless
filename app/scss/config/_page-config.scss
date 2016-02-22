@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 0 $footer-height;
+  background-color: white;
+  font-size: 14px;
+  overflow-x: hidden;
+}

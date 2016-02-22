@@ -1,0 +1,18 @@
+$tremble-offset: 1px;
+
+@keyframes tremble {
+
+  0%, 20%, 40%, 60%, 80%, 100%  {
+    transform: translateX($tremble-offset);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: none;
+  }
+}
+
+.tremble {
+  animation-name: tremble;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

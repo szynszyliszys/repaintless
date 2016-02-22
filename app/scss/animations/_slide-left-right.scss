@@ -1,0 +1,23 @@
+$slide-left-right-offset: 50px;
+
+@keyframes slide-left-right {
+
+  0% {
+    transform: translateX(-$slide-left-right-offset);
+  }
+
+  50% {
+    transform: none;
+  }
+
+  100% {
+    transform: translateX($slide-left-right-offset)
+  }
+}
+
+.slide-left-right {
+  animation-name: slide-left-right;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}

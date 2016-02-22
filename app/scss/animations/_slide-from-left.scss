@@ -1,0 +1,14 @@
+@keyframes slide-from-left {
+
+  0% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.slide-from-left {
+  animation-name: slide-from-left;
+}

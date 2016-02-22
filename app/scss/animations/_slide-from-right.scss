@@ -1,0 +1,14 @@
+@keyframes slide-from-right {
+
+  0% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.slide-from-right {
+  animation-name: slide-from-right;
+}

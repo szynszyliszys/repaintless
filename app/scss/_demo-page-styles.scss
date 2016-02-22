@@ -1,0 +1,36 @@
+$element-side-size: 100px;
+
+.test {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -($element-side-size/2);
+  width: $element-side-size;
+  height: $element-side-size;
+  background-color: $brand-color;
+}
+
+a {
+  color: $brand-color-light;
+  text-decoration: none;
+
+  &:visited, &:active {
+    color: darken($brand-color-light, 10);
+  }
+
+  &:hover {
+    color: lighten($brand-color-light, 10);
+    text-decoration: underline;
+  }
+}
+
+footer {
+  position: absolute;
+  height: $footer-height;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: $brand-color;
+  color: white;
+  text-align: center;
+}

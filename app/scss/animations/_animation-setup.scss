@@ -1,0 +1,15 @@
+.element-animated {
+  animation-duration: 1s;
+
+  &.short {
+    animation-duration: .5s;
+  }
+
+  &.long {
+    animation-duration: 2s;
+  }
+
+  &.infinite {
+    animation-iteration-count: infinite;
+  }
+}

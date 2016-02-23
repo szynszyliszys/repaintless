@@ -7,12 +7,11 @@ Repaintless in a lightweight animation library that consists only of animations 
 
 ## How to use
 
-Download repaintless.css file from repaintless-css directory and include in website's head section (above the rest of your styles):
+Download repaintless.css file from repaintless-css directory and include in website's head section:
 
 ```html
 <head>
   <link href="path-to-css-directory/repaintless.css" rel="stylesheet"></link>
-  <link href="path-to-css-directory/your-styles.css" rel="stylesheet"></link>
 </head>
 ```
 

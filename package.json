@@ -1,7 +1,7 @@
 {
-  "name": "reprintless",
+  "name": "repaintless",
   "version": "1.0.0",
-  "description": "Reprintless is a library of CSS animations, which don't cause costly reprints and recalculations in our browser. Animations are smooth and simple.",
+  "description": "Repaintless is a library of CSS animations, which don't cause costly repaints and recalculations in our browser. Animations are smooth and simple.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,10 @@
   "author": "Anna Migas",
   "license": "MIT",
   "devDependencies": {
+    "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
     "run-sequence": "^1.1.5"
   }

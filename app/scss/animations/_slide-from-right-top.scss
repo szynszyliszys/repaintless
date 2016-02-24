@@ -1,0 +1,14 @@
+@keyframes slide-from-right-top {
+
+  0% {
+    transform: translate(100px, -100px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.slide-from-right-top {
+  animation-name: slide-from-right-top;
+}

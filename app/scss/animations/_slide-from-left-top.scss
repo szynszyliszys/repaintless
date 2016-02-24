@@ -1,0 +1,14 @@
+@keyframes slide-from-left-top {
+
+  0% {
+    transform: translate(-100px, -100px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.slide-from-left-top {
+  animation-name: slide-from-left-top;
+}

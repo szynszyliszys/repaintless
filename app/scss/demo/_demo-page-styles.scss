@@ -2,12 +2,25 @@ $element-side-size: 100px;
 
 .test {
   position: absolute;
-  top: 200px;
+  top: 50%;
   left: 50%;
+  margin-top: -($element-side-size/2);
   margin-left: -($element-side-size/2);
   width: $element-side-size;
   height: $element-side-size;
-  background-color: $brand-color;
+  animation-iteration-count: infinite;
+  opacity: .8;
+
+  &.slide-from-right { background-color: $demo-item-red; }
+  &.slide-from-left { background-color: $demo-item-red; }
+  &.slide-from-top { background-color: $demo-item-green; }
+  &.slide-from-bottom { background-color: $demo-item-green; }
+  &.slide-from-right-bottom { background-color: $demo-item-violet; }
+  &.slide-from-left-top { background-color: $demo-item-violet; }
+  &.slide-from-left-bottom { background-color: $demo-item-blue; }
+  &.slide-from-right-top { background-color: $demo-item-blue; }
+  &.slide-left-right { background-color: $demo-item-yellow; }
+  &.tremble { background-color: $demo-item-orange; }
 }
 
 a {

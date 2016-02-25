@@ -11,6 +11,9 @@ html {
 body {
   margin: 0 0 $footer-height;
   background-color: white;
-  font-size: 14px;
   overflow-x: hidden;
+  color: $default-grey;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  font-size: 1em;
 }

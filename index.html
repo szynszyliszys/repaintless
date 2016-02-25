@@ -6,61 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Repaintless.css demo page</title>
 
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
 
 <body>
   <div class="filters-container">
-    <label>
+    <headergroup>
+      <h1><strong>Repaintless.css</strong> demonstration page</h1>
+      <h2> Click on any filter to toggle animation </h2>
+    </headergroup>
+    <label class="single-filter">
       <input type="checkbox" rel="element-animated" />
       <span>All</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-from-right" />
       <span>Slide from right</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-from-left" />
       <span>Slide from left</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-from-top" />
       <span>Slide from top</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-from-bottom" />
       <span>Slide from bottom</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-from-right-bottom" />
       <span>Slide from right bottom</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-from-right-top" />
       <span>Slide from right top</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-from-left-bottom" />
       <span>Slide from left bottom</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-from-left-top" />
       <span>Slide from left top</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-left-right" />
       <span>Slide left right</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="slide-top-bottom" />
       <span>Slide top bottom</span>
     </label>
-    <label>
+    <label class="single-filter">
       <input type="checkbox" rel="tremble" />
       <span>Tremble</span>
     </label>
   </div>
-  <div class="main-container" role="main">
+  <section class="main-container" role="main">
     <div class="test element-animated slide-from-right"></div>
     <div class="test element-animated slide-from-left"></div>
     <div class="test element-animated slide-from-top"></div>
@@ -72,9 +77,15 @@
     <div class="test element-animated slide-left-right"></div>
     <div class="test element-animated slide-top-bottom"></div>
     <div class="test element-animated tremble"></div>
-  </div>
+  </section>
+
   <footer role="contentinfo">
-    <p>From <a href="http://lunarlogic.io">Lunar Logic</a> and <a href="https://twitter.com/szynszyliszys">Anna Migas</a> with &#9825</p>
+    <p>
+      Repaintless.css is a lightweight animation library. To check why it is so smooth and start using it go to <a href="https://github.com/szynszyliszys/repaintless">the repaintless.css github repository</a>.
+    </p>
+    <p>
+      From <a href="http://lunarlogic.io">Lunar Logic</a> and <a href="https://twitter.com/szynszyliszys">Anna Migas</a> with &#9825
+    </p>
   </footer>
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="js/index.js"></script>

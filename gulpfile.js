@@ -7,14 +7,14 @@ var cssnano = require('gulp-cssnano');
 var runSequence = require('run-sequence');
 
 gulp.task('sass-demo', function() {
-  return gulp.src('app/scss/styles.scss')
+  return gulp.src('scss/styles.scss')
   .pipe(sass({outputStyle: 'expanded'}))
   .pipe(autoprefixer('last 2 versions'))
-  .pipe(gulp.dest('app/css'));
+  .pipe(gulp.dest('css'));
 });
 
 gulp.task('watch', function() {
-  gulp.watch('app/scss/**/*.scss', ['sass-demo']);
+  gulp.watch('scss/**/*.scss', ['sass-demo']);
 });
 
 gulp.task('default', function(callback) {

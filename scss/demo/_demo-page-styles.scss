@@ -1,49 +1,20 @@
 $element-side-size: 100px;
 
-.filters-container {
-  width: 80%;
-  max-width: 800px;
-  margin: 2rem auto;
-  text-align: center;
+h1, h2 {
+  margin: 0;
+}
 
-  label {
-    display: inline-block;
+h1 {
+  font-size: 3em;
+
+  strong {
+    color: lighten($demo-item-red,10);
   }
+}
 
-  span {
-    display: inline-block;
-    margin-right: .5em;
-    margin-bottom: .5em;
-    padding: 0.5em 0.75em;
-    border-radius: .25em;
-    font-size: 1.25em;
-    line-height: 1em;
-    color: $default-grey;
-    background-color: transparent;
-    border: 2px solid $default-grey;
-    cursor: pointer;
-    opacity: .8;
-
-    &:hover {
-      border: 2px solid $demo-item-red;
-    }
-  }
-
-  input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  input:focus + span {
-    border: 2px solid $demo-item-red;
-  }
-
-  input:checked + span {
-    background-color: $demo-item-red;
-    border: 2px solid $demo-item-red;
-    color: white;
-  }
+headergroup {
+  display: block;
+  margin: 1em 0 3em;
 }
 
 .test {

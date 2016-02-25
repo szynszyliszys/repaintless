@@ -1,0 +1,47 @@
+$filters-color: $demo-item-red;
+
+.filters-container {
+  width: 85%;
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.single-filter {
+  display: inline-block;
+
+  span {
+    display: inline-block;
+    margin-right: .25em;
+    margin-bottom: .5em;
+    padding: 0.5em 0.75em;
+    border-radius: .25em;
+    font-size: 1.1em;
+    line-height: 1em;
+    color: $default-grey;
+    background-color: transparent;
+    border: 2px solid $default-grey;
+    cursor: pointer;
+    opacity: .7;
+
+    &:hover {
+      border: 2px solid $filters-color;
+    }
+  }
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  input:focus + span {
+    border: 2px solid $filters-color;
+  }
+
+  input:checked + span {
+    background-color: $filters-color;
+    border: 2px solid $filters-color;
+    color: white;
+  }
+}

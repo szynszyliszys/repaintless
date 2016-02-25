@@ -412,10 +412,13 @@ html {
 }
 
 body {
-  margin: 0 0 3rem;
+  margin: 0 0 6rem;
   background-color: white;
-  font-size: 14px;
   overflow-x: hidden;
+  color: #666;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  font-size: 1em;
 }
 
 .element-animated {
@@ -767,61 +770,76 @@ body {
           animation-iteration-count: infinite;
 }
 
-footer {
-  position: absolute;
-  height: 3rem;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  background-color: #18242f;
-  color: white;
-  text-align: center;
-}
-
 .filters-container {
-  width: 80%;
-  max-width: 800px;
+  width: 85%;
+  max-width: 900px;
   margin: 2rem auto;
   text-align: center;
 }
 
-.filters-container label {
+.single-filter {
   display: inline-block;
 }
 
-.filters-container span {
+.single-filter span {
   display: inline-block;
-  margin-right: .5em;
+  margin-right: .25em;
   margin-bottom: .5em;
   padding: 0.5em 0.75em;
   border-radius: .25em;
-  font-size: 1.25em;
+  font-size: 1.1em;
   line-height: 1em;
   color: #666;
   background-color: transparent;
   border: 2px solid #666;
   cursor: pointer;
-  opacity: .8;
+  opacity: .7;
 }
 
-.filters-container span:hover {
+.single-filter span:hover {
   border: 2px solid #e74c3c;
 }
 
-.filters-container input {
+.single-filter input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.filters-container input:focus + span {
+.single-filter input:focus + span {
   border: 2px solid #e74c3c;
 }
 
-.filters-container input:checked + span {
+.single-filter input:checked + span {
   background-color: #e74c3c;
   border: 2px solid #e74c3c;
   color: white;
+}
+
+footer {
+  position: absolute;
+  height: 6rem;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1 strong {
+  color: #ed7669;
+}
+
+headergroup {
+  display: block;
+  margin: 1em 0 3em;
 }
 
 .test {

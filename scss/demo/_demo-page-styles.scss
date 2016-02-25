@@ -1,5 +1,51 @@
 $element-side-size: 100px;
 
+.filters-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+
+  label {
+    display: inline-block;
+  }
+
+  span {
+    display: inline-block;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    padding: 0.5em 0.75em;
+    border-radius: .25em;
+    font-size: 1.25em;
+    line-height: 1em;
+    color: $default-grey;
+    background-color: transparent;
+    border: 2px solid $default-grey;
+    cursor: pointer;
+    opacity: .8;
+
+    &:hover {
+      border: 2px solid $demo-item-red;
+    }
+  }
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  input:focus + span {
+    border: 2px solid $demo-item-red;
+  }
+
+  input:checked + span {
+    background-color: $demo-item-red;
+    border: 2px solid $demo-item-red;
+    color: white;
+  }
+}
+
 .test {
   position: absolute;
   top: 50%;
@@ -9,7 +55,7 @@ $element-side-size: 100px;
   width: $element-side-size;
   height: $element-side-size;
   animation-iteration-count: infinite;
-  opacity: .8;
+  opacity: 0;
 
   &.slide-from-right { background-color: $demo-item-red; }
   &.slide-from-left { background-color: $demo-item-red; }
@@ -20,6 +66,7 @@ $element-side-size: 100px;
   &.slide-from-left-bottom { background-color: $demo-item-blue; }
   &.slide-from-right-top { background-color: $demo-item-blue; }
   &.slide-left-right { background-color: $demo-item-yellow; }
+  &.slide-top-bottom { background-color: $demo-item-yellow; }
   &.tremble { background-color: $demo-item-orange; }
 }
 
@@ -35,15 +82,4 @@ a {
     color: lighten($brand-color-light, 10);
     text-decoration: underline;
   }
-}
-
-footer {
-  position: absolute;
-  height: $footer-height;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  background-color: $brand-color;
-  color: white;
-  text-align: center;
 }

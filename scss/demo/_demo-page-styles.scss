@@ -8,7 +8,7 @@ h1 {
   font-size: 3em;
 
   strong {
-    color: lighten($demo-item-red,10);
+    color: $demo-item-green;
   }
 }
 
@@ -42,15 +42,11 @@ headergroup {
 }
 
 a {
-  color: $brand-color-light;
+  color: $demo-item-green;
   text-decoration: none;
 
-  &:visited, &:active {
-    color: darken($brand-color-light, 10);
-  }
-
   &:hover {
-    color: lighten($brand-color-light, 10);
+    color: lighten($demo-item-green, 10);
     text-decoration: underline;
   }
 }

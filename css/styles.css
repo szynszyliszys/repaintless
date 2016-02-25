@@ -797,7 +797,7 @@ body {
 }
 
 .single-filter span:hover {
-  border: 2px solid #e74c3c;
+  border: 2px solid #27ae60;
 }
 
 .single-filter input {
@@ -807,12 +807,12 @@ body {
 }
 
 .single-filter input:focus + span {
-  border: 2px solid #e74c3c;
+  border: 2px solid #27ae60;
 }
 
 .single-filter input:checked + span {
-  background-color: #e74c3c;
-  border: 2px solid #e74c3c;
+  background-color: #27ae60;
+  border: 2px solid #27ae60;
   color: white;
 }
 
@@ -834,7 +834,7 @@ h1 {
 }
 
 h1 strong {
-  color: #ed7669;
+  color: #27ae60;
 }
 
 headergroup {
@@ -900,15 +900,11 @@ headergroup {
 }
 
 a {
-  color: #00aeef;
+  color: #27ae60;
   text-decoration: none;
 }
 
-a:visited, a:active {
-  color: #0089bc;
-}
-
 a:hover {
-  color: #23c3ff;
+  color: #36d278;
   text-decoration: underline;
 }

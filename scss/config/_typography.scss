@@ -1,0 +1,40 @@
+$h1-sizes: (
+  'mobile': 1.5em,
+  'tablet': 2em,
+  'desktop': 3em
+);
+
+$h2-sizes: (
+  'mobile': 1em,
+  'tablet': 1.25em,
+  'desktop': 1.5em
+);
+
+body {
+  color: $default-grey;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($main-color, 10);
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  @include font-sizes($h1-sizes);
+
+  strong {
+    color: $main-color;
+  }
+}
+
+h2 {
+  @include font-sizes($h2-sizes);
+}

@@ -1,0 +1,11 @@
+@mixin font-sizes($font-sizes-group) {
+  font-size: map-get($font-sizes-group, 'mobile');
+
+  @media screen and (min-width: $tablet) {
+    font-size: map-get($font-sizes-group, 'tablet');
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: map-get($font-sizes-group, 'desktop');
+  }
+}

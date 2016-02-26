@@ -401,6 +401,59 @@ optgroup {
   font-weight: bold;
 }
 
+body {
+  color: #666;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+a {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #36d278;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+h1 strong {
+  color: #27ae60;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -415,10 +468,6 @@ body {
   margin: 0 0 6rem;
   background-color: white;
   overflow-x: hidden;
-  color: #666;
-  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
-  line-height: 1.5;
-  font-size: 1em;
 }
 
 .element-animated {
@@ -826,15 +875,7 @@ footer {
 }
 
 h1, h2 {
-  margin: 0;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-h1 strong {
-  color: #27ae60;
+  margin: 0 0 .25em;
 }
 
 headergroup {
@@ -844,7 +885,7 @@ headergroup {
 
 .test {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   margin-top: -50px;
   margin-left: -50px;
@@ -897,14 +938,4 @@ headergroup {
 
 .test.tremble {
   background-color: #e67e22;
-}
-
-a {
-  color: #27ae60;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #36d278;
-  text-decoration: underline;
 }

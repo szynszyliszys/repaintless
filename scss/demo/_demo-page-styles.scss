@@ -1,15 +1,7 @@
 $element-side-size: 100px;
 
 h1, h2 {
-  margin: 0;
-}
-
-h1 {
-  font-size: 3em;
-
-  strong {
-    color: $main-color;
-  }
+  margin: 0 0 .25em;
 }
 
 headergroup {
@@ -19,7 +11,7 @@ headergroup {
 
 .test {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   margin-top: -($element-side-size/2);
   margin-left: -($element-side-size/2);
@@ -41,12 +33,3 @@ headergroup {
   &.tremble { background-color: $demo-item-orange; }
 }
 
-a {
-  color: $main-color;
-  text-decoration: none;
-
-  &:hover {
-    color: lighten($main-color, 10);
-    text-decoration: underline;
-  }
-}

@@ -1,5 +1,3 @@
-$element-side-size: 100px;
-
 h1, h2 {
   margin: 0 0 .25em;
 }
@@ -9,16 +7,22 @@ headergroup {
   margin: 1em 0 3em;
 }
 
-.test {
+.main-container {
+  position: relative;
+  height: 500px;
+}
+
+.element-animated {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   margin-top: -($element-side-size/2);
   margin-left: -($element-side-size/2);
   width: $element-side-size;
   height: $element-side-size;
+  animation-play-state: paused;
   animation-iteration-count: infinite;
-  opacity: 0;
+  opacity: .8;
 
   &.slide-from-right { background-color: $demo-item-red; }
   &.slide-from-left { background-color: $demo-item-red; }
@@ -33,3 +37,23 @@ headergroup {
   &.tremble { background-color: $demo-item-orange; }
 }
 
+#play-animation {
+  position: absolute;
+  appearance: none;
+  width: $element-side-size;
+  height: $element-side-size;
+  box-shadow:none;
+  background-color: $main-color;
+  color: white;
+  border: none;
+  top: 50%;
+  left: 50%;
+  margin-top: -($element-side-size/2);
+  margin-left: -($element-side-size/2);
+  z-index: 5;
+  font-size: 1.5em;
+}
+
+.animation-running {
+  animation-play-state: running;
+}

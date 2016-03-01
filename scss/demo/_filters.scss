@@ -2,19 +2,19 @@ $filters-color: $main-color;
 
 .filters-container {
   width: 85%;
-  max-width: 900px;
-  margin: 2rem auto;
+  max-width: 1000px;
+  margin: 2em auto;
   text-align: center;
 }
 
-.single-filter {
-  display: inline-block;
+.single-filter, .all-filter {
+  display: none;
 
   span {
     display: inline-block;
     margin-right: .25em;
     margin-bottom: .5em;
-    padding: 0.5em 0.75em;
+    padding: 0.25em 0.5em;
     border-radius: .25em;
     font-size: 1.1em;
     line-height: 1em;
@@ -43,5 +43,9 @@ $filters-color: $main-color;
     background-color: $filters-color;
     border: 2px solid $filters-color;
     color: white;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
   }
 }

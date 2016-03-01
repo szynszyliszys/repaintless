@@ -790,23 +790,23 @@ body {
 
 @-webkit-keyframes tremble {
   0%, 20%, 40%, 60%, 80%, 100% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  10%, 30%, 50%, 70%, 90% {
     -webkit-transform: none;
             transform: none;
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
 @keyframes tremble {
   0%, 20%, 40%, 60%, 80%, 100% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  10%, 30%, 50%, 70%, 90% {
     -webkit-transform: none;
             transform: none;
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
@@ -821,20 +821,20 @@ body {
 
 .filters-container {
   width: 85%;
-  max-width: 900px;
-  margin: 2rem auto;
+  max-width: 1000px;
+  margin: 2em auto;
   text-align: center;
 }
 
-.single-filter {
-  display: inline-block;
+.single-filter, .all-filter {
+  display: none;
 }
 
-.single-filter span {
+.single-filter span, .all-filter span {
   display: inline-block;
   margin-right: .25em;
   margin-bottom: .5em;
-  padding: 0.5em 0.75em;
+  padding: 0.25em 0.5em;
   border-radius: .25em;
   font-size: 1.1em;
   line-height: 1em;
@@ -845,24 +845,30 @@ body {
   opacity: .7;
 }
 
-.single-filter span:hover {
+.single-filter span:hover, .all-filter span:hover {
   border: 2px solid #27ae60;
 }
 
-.single-filter input {
+.single-filter input, .all-filter input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.single-filter input:focus + span {
+.single-filter input:focus + span, .all-filter input:focus + span {
   border: 2px solid #27ae60;
 }
 
-.single-filter input:checked + span {
+.single-filter input:checked + span, .all-filter input:checked + span {
   background-color: #27ae60;
   border: 2px solid #27ae60;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .single-filter, .all-filter {
+    display: inline-block;
+  }
 }
 
 footer {
@@ -871,6 +877,7 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
+  padding: 0 2em;
   text-align: center;
 }
 
@@ -883,59 +890,90 @@ headergroup {
   margin: 1em 0 3em;
 }
 
-.test {
+.main-container {
+  position: relative;
+  height: 500px;
+}
+
+.element-animated {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   margin-top: -50px;
   margin-left: -50px;
   width: 100px;
   height: 100px;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  opacity: 0;
+  opacity: .8;
 }
 
-.test.slide-from-right {
+.element-animated.slide-from-right {
   background-color: #e74c3c;
 }
 
-.test.slide-from-left {
+.element-animated.slide-from-left {
   background-color: #e74c3c;
 }
 
-.test.slide-from-top {
+.element-animated.slide-from-top {
   background-color: #27ae60;
 }
 
-.test.slide-from-bottom {
+.element-animated.slide-from-bottom {
   background-color: #27ae60;
 }
 
-.test.slide-from-right-bottom {
+.element-animated.slide-from-right-bottom {
   background-color: #8e44ad;
 }
 
-.test.slide-from-left-top {
+.element-animated.slide-from-left-top {
   background-color: #8e44ad;
 }
 
-.test.slide-from-left-bottom {
+.element-animated.slide-from-left-bottom {
   background-color: #2980b9;
 }
 
-.test.slide-from-right-top {
+.element-animated.slide-from-right-top {
   background-color: #2980b9;
 }
 
-.test.slide-left-right {
+.element-animated.slide-left-right {
   background-color: #f1c40f;
 }
 
-.test.slide-top-bottom {
+.element-animated.slide-top-bottom {
   background-color: #f1c40f;
 }
 
-.test.tremble {
+.element-animated.tremble {
   background-color: #e67e22;
+}
+
+#play-animation {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100px;
+  height: 100px;
+  box-shadow: none;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  z-index: 5;
+  font-size: 1.5em;
+}
+
+.animation-running {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }

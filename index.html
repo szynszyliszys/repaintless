@@ -16,8 +16,8 @@
       <h1><strong>Repaintless.css</strong> demonstration page</h1>
       <h2> Click on any filter to toggle animation </h2>
     </headergroup>
-    <label class="single-filter">
-      <input type="checkbox" rel="element-animated" />
+    <label class="single-filter all-filter">
+      <input type="checkbox" rel="element-animated" checked="checked"/>
       <span>All</span>
     </label>
     <label class="single-filter">
@@ -66,17 +66,18 @@
     </label>
   </div>
   <section class="main-container" role="main">
-    <div class="test element-animated slide-from-right"></div>
-    <div class="test element-animated slide-from-left"></div>
-    <div class="test element-animated slide-from-top"></div>
-    <div class="test element-animated slide-from-bottom"></div>
-    <div class="test element-animated slide-from-right-bottom"></div>
-    <div class="test element-animated slide-from-right-top"></div>
-    <div class="test element-animated slide-from-left-bottom"></div>
-    <div class="test element-animated slide-from-left-top"></div>
-    <div class="test element-animated slide-left-right"></div>
-    <div class="test element-animated slide-top-bottom"></div>
-    <div class="test element-animated tremble"></div>
+    <button id="play-animation" type="button">PLAY</button>
+    <div class="element-animated slide-from-right"></div>
+    <div class="element-animated slide-from-left"></div>
+    <div class="element-animated slide-from-top"></div>
+    <div class="element-animated slide-from-bottom"></div>
+    <div class="element-animated slide-from-right-bottom"></div>
+    <div class="element-animated slide-from-right-top"></div>
+    <div class="element-animated slide-from-left-bottom"></div>
+    <div class="element-animated slide-from-left-top"></div>
+    <div class="element-animated slide-left-right"></div>
+    <div class="element-animated slide-top-bottom"></div>
+    <div class="element-animated tremble"></div>
   </section>
 
   <footer role="contentinfo">

@@ -3,11 +3,11 @@ $tremble-offset: 5px;
 @keyframes tremble {
 
   0%, 20%, 40%, 60%, 80%, 100%  {
-    transform: translateX($tremble-offset);
+    transform: none;
   }
 
   10%, 30%, 50%, 70%, 90% {
-    transform: none;
+    transform: translateX($tremble-offset);
   }
 }
 

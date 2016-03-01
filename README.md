@@ -6,7 +6,7 @@ Repaintless.css in a lightweight animation library that consists only of animati
 
 ## Demo
 
-There is a demo page for the library. You can see it here: (http://szynszyliszys.github.io/repaintless/)
+[There is a demo page for the library.](http://szynszyliszys.github.io/repaintless/)
 
 ## How to use
 

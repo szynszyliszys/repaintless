@@ -42,16 +42,19 @@ headergroup {
   appearance: none;
   width: $element-side-size;
   height: $element-side-size;
-  box-shadow:none;
-  background-color: $main-color;
-  color: white;
-  border: none;
   top: 50%;
   left: 50%;
   margin-top: -($element-side-size/2);
   margin-left: -($element-side-size/2);
+  box-shadow:none;
+  background-color: $main-color;
+  color: white;
+  border: none;
   z-index: 5;
-  font-size: 1.5em;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 1.5em;
+  }
 }
 
 .animation-running {

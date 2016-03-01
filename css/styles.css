@@ -822,7 +822,7 @@ body {
 .filters-container {
   width: 85%;
   max-width: 1000px;
-  margin: 2em auto;
+  margin: 1em auto;
   text-align: center;
 }
 
@@ -967,16 +967,21 @@ headergroup {
           appearance: none;
   width: 75px;
   height: 75px;
-  box-shadow: none;
-  background-color: #27ae60;
-  color: white;
-  border: none;
   top: 50%;
   left: 50%;
   margin-top: -37.5px;
   margin-left: -37.5px;
+  box-shadow: none;
+  background-color: #27ae60;
+  color: white;
+  border: none;
   z-index: 5;
-  font-size: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  #play-animation {
+    font-size: 1.5em;
+  }
 }
 
 .animation-running {

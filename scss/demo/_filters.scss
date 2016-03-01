@@ -3,7 +3,7 @@ $filters-color: $main-color;
 .filters-container {
   width: 85%;
   max-width: 1000px;
-  margin: 1em auto;
+  margin: .5em auto;
   text-align: center;
 
   @media screen and (min-width: $tablet) {

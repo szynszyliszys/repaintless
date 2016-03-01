@@ -5,9 +5,13 @@ $filters-color: $main-color;
   max-width: 1000px;
   margin: 2em auto;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    margin: 2em auto 6em;
+  }
 }
 
-.single-filter, .all-filter {
+.single-filter {
   display: none;
 
   span {

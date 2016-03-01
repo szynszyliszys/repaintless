@@ -5,11 +5,13 @@ $(document).ready(function () {
 
   $('#play-animation').on('click', function () {
     this.remove();
+
     $('.main-container').find('.element-animated').each(function (){
       this.classList.add("animation-running");
     });
-    console.log('.all-filter');
-      });
+
+    $('.all-filter').find('input:checkbox').attr("checked", true);
+  });
 
   checkbox.on('click', function () {
     $('.element-animated').css({"opacity" : "0"});

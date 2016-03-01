@@ -1,7 +1,9 @@
+$slide-from-bottom-offset: $default-offset;
+
 @keyframes slide-from-bottom {
 
   0% {
-    transform: translateY(200px);
+    transform: translateY($slide-from-bottom-offset);
   }
 
   100% {

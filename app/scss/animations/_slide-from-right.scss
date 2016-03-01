@@ -1,7 +1,9 @@
+$slide-from-right-offset: $default-offset;
+
 @keyframes slide-from-right {
 
   0% {
-    transform: translateX(200px);
+    transform: translateX($slide-from-right-offset);
   }
 
   100% {

@@ -1,7 +1,9 @@
+$slide-from-left-top-offset: $default-offset/2;
+
 @keyframes slide-from-left-top {
 
   0% {
-    transform: translate(-100px, -100px);
+    transform: translate(-$slide-from-left-top-offset, -$slide-from-left-top-offset);
   }
 
   100% {

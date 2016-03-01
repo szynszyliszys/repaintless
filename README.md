@@ -1,9 +1,12 @@
-# Repaintless.css
+# Repaintless.css - making animations fast
 
 Repaintless.css in a lightweight animation library that consists only of animations that don't cause reflows and repaints of a website when used correctly. The idea for a library came after seeing the talk by [Paul Lewis](https://twitter.com/aerotwist) on animations and FLIP technique. Basic idea is to remove transition from element, not to apply it while animating. It saves user a tiny lag before animation starts and feels super smooth. To understand the concept better you can read [a blog post on that](https://aerotwist.com/blog/flip-your-animations/) or at least this quote from the post:
 
 > The reason you can afford to do this relatively expensive precalculation is because there is a window of 100ms after someone interacts with your site where you’re able to do work without them noticing. If you’re inside that window users will feel like the site responded instantly! It’s only when things are moving that you need to maintain 60fps.
 
+## Demo
+
+There is a demo page for the library. You can see it here: (http://szynszyliszys.github.io/repaintless/)
 
 ## How to use
 
@@ -31,6 +34,12 @@ Default timing of an animation is one second. You can have an animation that has
 <div class="element-animated slide-from-top infinite"> I will do that forever to drive you crazy! </div>
 ```
 
+## Customization
+
+For now there is no gulp task for that. To get few out of all animations you need to edit [repaintless.scss](https://github.com/szynszyliszys/repaintless/blob/master/app/scss/repaintless.scss) file and leave there @import declarations for wanted animations only. After that use gulp build task to create css file.
+
+You can also easily change the offset value for animated elements. Each animation has its own scss  variable in the same file, right at the top. Names always follow the key $animation-name-offset: value;
+
 ## List of animations
 
 All possible animations are listed here. Some of them are looped by default and it is always mentioned next to the name. Hopefully the list of animations will get longer and longer.
@@ -40,11 +49,15 @@ All possible animations are listed here. Some of them are looped by default and 
 - slide-from-left
 - slide-from-right
 - slide-from-right-bottom
+- slide-from-right-top
+- slide-from-left-bottom
+- slide-from-left-top
+- slide-top-bottom (looped)
 - slide-left-right (looped)
 - tremble (looped)
 
 ## License
 
-[The MIT License (MIT)](http://choosealicense.com/licenses/mit/)
+The library is under [The MIT License (MIT)](http://choosealicense.com/licenses/mit/)
 
 

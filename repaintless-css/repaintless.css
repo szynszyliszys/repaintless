@@ -423,3 +423,32 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+  50% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+  50% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.rotate {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}

@@ -1,4 +1,11 @@
 $element-side-size: 100px;
+$main-container-height: $element-side-size*5;
+
+.main-container {
+  height: $main-container-height;
+  position: relative;
+  margin-top: $main-container-height/2;
+}
 
 .element-animated {
   position: absolute;
@@ -24,13 +31,25 @@ $element-side-size: 100px;
   &.tremble { background-color: $demo-item-orange; }
 
   &.fade-out {
-    background-color: $demo-item-yellow;
+    background-color: $demo-item-orange;
     transform: translate(-2*$element-side-size, 2*$element-side-size);
   }
 
   &.fade-in {
-    background-color: $demo-item-yellow;
+    background-color: $demo-item-orange;
     transform: translate(-2*$element-side-size, -2*$element-side-size);
+  }
+
+  &.pulsate {
+    background-color: $demo-item-orange;
+    transform: translate(2*$element-side-size, 2*$element-side-size);
+  }
+
+  &.rotate {
+    background-color: $demo-item-orange;
+    top:0;
+    margin-top: 0;
+    margin-left: $element-side-size*1.5;
   }
 }
 

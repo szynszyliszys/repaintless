@@ -394,3 +394,32 @@
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
+
+@-webkit-keyframes pulsate {
+  0%, 100% {
+    opacity: .8;
+  }
+  50% {
+    opacity: .6;
+  }
+}
+
+@keyframes pulsate {
+  0%, 100% {
+    opacity: .8;
+  }
+  50% {
+    opacity: .6;
+  }
+}
+
+.pulsate {
+  -webkit-animation-name: pulsate;
+          animation-name: pulsate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}

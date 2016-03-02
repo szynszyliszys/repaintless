@@ -1,0 +1,15 @@
+@keyframes rotate {
+
+  0% {
+    transform: rotate(-1turn);
+  }
+
+  50%  {
+    transform: none;
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-timing-function: ease-in-out;
+}

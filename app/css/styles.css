@@ -815,6 +815,70 @@ body {
           animation-timing-function: ease-in;
 }
 
+@-webkit-keyframes pulsate {
+  0%, 100% {
+    opacity: .8;
+  }
+  50% {
+    opacity: .6;
+  }
+}
+
+@keyframes pulsate {
+  0%, 100% {
+    opacity: .8;
+  }
+  50% {
+    opacity: .6;
+  }
+}
+
+.pulsate {
+  -webkit-animation-name: pulsate;
+          animation-name: pulsate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+  50% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+  50% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.rotate {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main-container {
+  height: 500px;
+  position: relative;
+  margin-top: 250px;
+}
+
 .element-animated {
   position: absolute;
   top: 50%;
@@ -873,15 +937,28 @@ body {
 }
 
 .element-animated.fade-out {
-  background-color: #f1c40f;
+  background-color: #e67e22;
   -webkit-transform: translate(-200px, 200px);
           transform: translate(-200px, 200px);
 }
 
 .element-animated.fade-in {
-  background-color: #f1c40f;
+  background-color: #e67e22;
   -webkit-transform: translate(-200px, -200px);
           transform: translate(-200px, -200px);
+}
+
+.element-animated.pulsate {
+  background-color: #e67e22;
+  -webkit-transform: translate(200px, 200px);
+          transform: translate(200px, 200px);
+}
+
+.element-animated.rotate {
+  background-color: #e67e22;
+  top: 0;
+  margin-top: 0;
+  margin-left: 150px;
 }
 
 a {

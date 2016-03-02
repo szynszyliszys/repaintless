@@ -1,0 +1,14 @@
+@keyframes fade-out {
+
+  0% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation-name: fade-out;
+}

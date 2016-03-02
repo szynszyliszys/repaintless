@@ -1,0 +1,23 @@
+$slide-top-bottom-offset: $default-offset/2;
+
+@keyframes slide-top-bottom {
+
+  0% {
+    transform: translateY(-$slide-left-right-offset);
+  }
+
+  50% {
+    transform: none;
+  }
+
+  100% {
+    transform: translateY($slide-left-right-offset)
+  }
+}
+
+.slide-top-bottom {
+  animation-name: slide-top-bottom;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}

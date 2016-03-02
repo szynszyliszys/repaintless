@@ -1,6 +1,6 @@
 $element-side-size: 100px;
 
-.test {
+.element-animated {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,7 +20,18 @@ $element-side-size: 100px;
   &.slide-from-left-bottom { background-color: $demo-item-blue; }
   &.slide-from-right-top { background-color: $demo-item-blue; }
   &.slide-left-right { background-color: $demo-item-yellow; }
+  &.slide-top-bottom { background-color: $demo-item-yellow; }
   &.tremble { background-color: $demo-item-orange; }
+
+  &.fade-out {
+    background-color: $demo-item-yellow;
+    transform: translate(-2*$element-side-size, 2*$element-side-size);
+  }
+
+  &.fade-in {
+    background-color: $demo-item-yellow;
+    transform: translate(-2*$element-side-size, -2*$element-side-size);
+  }
 }
 
 a {

@@ -55,6 +55,10 @@ All possible animations are listed here. Some of them are looped by default and 
 - slide-top-bottom (looped)
 - slide-left-right (looped)
 - tremble (looped)
+- fade-in
+- fade-out
+- pulsate (looped)
+- rotate
 
 ## License
 

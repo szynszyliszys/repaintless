@@ -2,8 +2,8 @@ $element-side-size: 100px;
 $main-container-height: $element-side-size*5;
 
 .main-container {
-  height: $main-container-height;
   position: relative;
+  height: $main-container-height;
   margin-top: $main-container-height/2;
 }
 

@@ -8,7 +8,7 @@ Repaintless.css in a lightweight animation library that consists only of animati
 
 [There is a demo page for the library.](http://szynszyliszys.github.io/repaintless/)
 
-## How to use
+## Download
 
 Download repaintless.css file from repaintless-css directory and include in website's head section:
 
@@ -18,7 +18,22 @@ Download repaintless.css file from repaintless-css directory and include in webs
 </head>
 ```
 
-Now all you need to do is add class "element-animated" and the second class with chosen animation name, eg.:
+You can also get it by npm:
+
+```sh
+$ npm install repaintless
+```
+
+Or by Bower:
+
+```sh
+$ bower install repaintless
+```
+
+
+## How to use
+
+All you need to do is add class "element-animated" and the second class with chosen animation name, eg.:
 
 ```html
 <div class="element-animated tremble"> I tremble! </div>

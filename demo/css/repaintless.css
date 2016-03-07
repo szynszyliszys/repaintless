@@ -429,7 +429,7 @@
     -webkit-transform: rotate(-1turn);
             transform: rotate(-1turn);
   }
-  50% {
+  100% {
     -webkit-transform: none;
             transform: none;
   }
@@ -440,7 +440,7 @@
     -webkit-transform: rotate(-1turn);
             transform: rotate(-1turn);
   }
-  50% {
+  100% {
     -webkit-transform: none;
             transform: none;
   }

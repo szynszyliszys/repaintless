@@ -420,8 +420,8 @@ body {
 
 .main-container {
   position: relative;
-  height: 500px;
-  margin-top: 250px;
+  height: 510px;
+  margin-top: 255px;
 }
 
 .element-animated {
@@ -504,6 +504,22 @@ body {
   top: 0;
   margin-top: 0;
   margin-left: 150px;
+}
+
+.element-animated.rotate-slide-from-right {
+  background-color: #e74c3c;
+}
+
+.element-animated.rotate-slide-from-left {
+  background-color: #e74c3c;
+}
+
+.element-animated.rotate-slide-from-top {
+  background-color: #27ae60;
+}
+
+.element-animated.rotate-slide-from-bottom {
+  background-color: #27ae60;
 }
 
 a {

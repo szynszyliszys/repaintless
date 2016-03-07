@@ -1,5 +1,5 @@
 $element-side-size: 100px;
-$main-container-height: $element-side-size*5;
+$main-container-height: ($element-side-size*5)+10px;
 
 .main-container {
   position: relative;
@@ -50,6 +50,22 @@ $main-container-height: $element-side-size*5;
     top:0;
     margin-top: 0;
     margin-left: $element-side-size*1.5;
+  }
+
+  &.rotate-slide-from-right {
+    background-color: $demo-item-red;
+  }
+
+  &.rotate-slide-from-left {
+    background-color: $demo-item-red;
+  }
+
+  &.rotate-slide-from-top {
+    background-color: $demo-item-green;
+  }
+
+  &.rotate-slide-from-bottom {
+    background-color: $demo-item-green;
   }
 }
 

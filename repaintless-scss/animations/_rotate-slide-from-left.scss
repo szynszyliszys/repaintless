@@ -1,0 +1,18 @@
+$rotate-slide-from-left-offset: $default-offset;
+
+@keyframes rotate-slide-from-left {
+
+  0% {
+    transform: translateX(-$rotate-slide-from-left-offset) rotate(-1turn);
+    transform-origin: center;
+  }
+
+  100%  {
+    transform: none;
+  }
+}
+
+.rotate-slide-from-left {
+  animation-name: rotate-slide-from-left;
+  animation-timing-function: ease-in-out;
+}

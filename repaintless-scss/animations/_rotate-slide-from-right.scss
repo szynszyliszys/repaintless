@@ -1,0 +1,18 @@
+$rotate-slide-from-right-offset: $default-offset;
+
+@keyframes rotate-slide-from-right {
+
+  0% {
+    transform: translateX($rotate-slide-from-right-offset) rotate(1turn);
+    transform-origin: center;
+  }
+
+  100%  {
+    transform: none;
+  }
+}
+
+.rotate-slide-from-right {
+  animation-name: rotate-slide-from-right;
+  animation-timing-function: ease-in-out;
+}

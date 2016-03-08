@@ -74,9 +74,15 @@ All possible animations are listed here. Some of them are looped by default and 
 - fade-out
 - pulsate (looped)
 - rotate
+- rotate-slide-from-right
+- rotate-slide-from-left
+- rotate-slide-from-top
+- rotate-slide-from-bottom
 
 ## License
 
 The library is licensed under [The MIT License (MIT)](http://choosealicense.com/licenses/mit/).
+
+Go to [Lunar Logic website](http://www.lunarlogic.io/) to learn more [about us](http://www.lunarlogic.io/company) and [our work](http://www.lunarlogic.io/portfolio).
 
 

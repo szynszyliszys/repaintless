@@ -1,6 +1,6 @@
 {
   "name": "repaintless",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "homepage": "https://github.com/szynszyliszys/repaintless",
   "authors": [
     "Anna Migas <amjmigas@gmail.com>"
@@ -21,11 +21,11 @@
   "license": "MIT",
   "ignore": [
     ".gitignore",
+    ".npmignore",
     "node_modules",
     "bower_components",
     "/demo",
     "gulpfile.js",
-    "package.json",
-    "LICENSE.MD"
+    "package.json"
   ]
 }

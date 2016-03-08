@@ -77,6 +77,6 @@ All possible animations are listed here. Some of them are looped by default and 
 
 ## License
 
-The library is under [The MIT License (MIT)](http://choosealicense.com/licenses/mit/)
+The library is licensed under [The MIT License (MIT)](http://choosealicense.com/licenses/mit/).
 
 

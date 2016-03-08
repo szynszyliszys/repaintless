@@ -2,11 +2,8 @@
   "name": "repaintless",
   "version": "1.0.0",
   "description": "Repaintless is a library of CSS animations, which don't cause costly repaints and recalculations in our browser. Animations are smooth and simple.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Anna Migas",
+  "main": "repaintless-css/repaintless.css",
+  "author": "Anna Migas (amjmigas@gmail.com)",
   "license": "MIT",
   "devDependencies": {
     "del": "^2.2.0",

@@ -78,6 +78,14 @@ All possible animations are listed here. Some of them are looped by default and 
 - rotate-slide-from-left
 - rotate-slide-from-top
 - rotate-slide-from-bottom
+- appear-from-right
+- appear-from-left
+- appear-from-top
+- appear-from-bottom
+
+## Changelog
+
+Check what was changed in the newest version in the [Changelog](https://github.com/szynszyliszys/repaintless/blob/master/CHANGELOG.md).
 
 ## License
 

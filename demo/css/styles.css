@@ -414,8 +414,19 @@ html {
 body {
   margin: 0 0 3rem;
   background-color: white;
-  font-size: 14px;
+  font-size: 100%;
   overflow-x: hidden;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+}
+
+h2 {
+  position: absolute;
+  width: 100%;
+  margin-top: -100px;
 }
 
 .main-container {
@@ -500,49 +511,40 @@ body {
 }
 
 .element-animated.rotate {
-  background-color: #e67e22;
+  background-color: #e74c3c;
   top: 0;
   margin-top: 0;
   margin-left: 150px;
 }
 
 .element-animated.rotate-slide-from-right {
-  background-color: #e74c3c;
+  background-color: #8e44ad;
 }
 
 .element-animated.rotate-slide-from-left {
-  background-color: #e74c3c;
+  background-color: #8e44ad;
 }
 
 .element-animated.rotate-slide-from-top {
-  background-color: #27ae60;
+  background-color: #2980b8;
 }
 
 .element-animated.rotate-slide-from-bottom {
-  background-color: #27ae60;
+  background-color: #2980b8;
 }
 
-a {
-  color: #00aeef;
-  text-decoration: none;
+.element-animated.appear-from-right {
+  background-color: #f1c40f;
 }
 
-a:visited, a:active {
-  color: #0089bc;
+.element-animated.appear-from-left {
+  background-color: #f1c40f;
 }
 
-a:hover {
-  color: #23c3ff;
-  text-decoration: underline;
+.element-animated.appear-from-top {
+  background-color: #e74c3c;
 }
 
-footer {
-  position: absolute;
-  height: 3rem;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  background-color: #18242f;
-  color: white;
-  text-align: center;
+.element-animated.appear-from-bottom {
+  background-color: #e74c3c;
 }

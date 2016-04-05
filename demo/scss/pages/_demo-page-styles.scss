@@ -1,6 +1,18 @@
 $element-side-size: 100px;
 $main-container-height: ($element-side-size*5)+10px;
 
+h1, h2 {
+  text-align: center;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+
+}
+
+h2 {
+  position: absolute;
+  width: 100%;
+  margin-top: -100px;
+}
+
 .main-container {
   position: relative;
   height: $main-container-height;
@@ -46,50 +58,18 @@ $main-container-height: ($element-side-size*5)+10px;
   }
 
   &.rotate {
-    background-color: $demo-item-orange;
+    background-color: $demo-item-red;
     top:0;
     margin-top: 0;
     margin-left: $element-side-size*1.5;
   }
 
-  &.rotate-slide-from-right {
-    background-color: $demo-item-red;
-  }
-
-  &.rotate-slide-from-left {
-    background-color: $demo-item-red;
-  }
-
-  &.rotate-slide-from-top {
-    background-color: $demo-item-green;
-  }
-
-  &.rotate-slide-from-bottom {
-    background-color: $demo-item-green;
-  }
-}
-
-a {
-  color: $brand-color-light;
-  text-decoration: none;
-
-  &:visited, &:active {
-    color: darken($brand-color-light, 10);
-  }
-
-  &:hover {
-    color: lighten($brand-color-light, 10);
-    text-decoration: underline;
-  }
-}
-
-footer {
-  position: absolute;
-  height: $footer-height;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  background-color: $brand-color;
-  color: white;
-  text-align: center;
+  &.rotate-slide-from-right { background-color: $demo-item-violet; }
+  &.rotate-slide-from-left { background-color: $demo-item-violet; }
+  &.rotate-slide-from-top { background-color: $demo-item-blue; }
+  &.rotate-slide-from-bottom { background-color: $demo-item-blue; }
+  &.appear-from-right { background-color: $demo-item-yellow; }
+  &.appear-from-left { background-color: $demo-item-yellow; }
+  &.appear-from-top { background-color: $demo-item-red; }
+  &.appear-from-bottom { background-color: $demo-item-red; }
 }

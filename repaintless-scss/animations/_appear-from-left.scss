@@ -1,0 +1,27 @@
+$appear-from-left-offset: $default-offset;
+
+@keyframes appear-from-left {
+
+  0% {
+    transform: translateX(-$appear-from-left-offset);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: .7;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.appear-from-left {
+  animation-name: appear-from-left;
+  animation-timing-function: cubic-bezier(.39,.58,.57,1);
+}

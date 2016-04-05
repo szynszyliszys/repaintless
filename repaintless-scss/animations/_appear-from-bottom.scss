@@ -1,0 +1,27 @@
+$appear-from-bottom-offset: $default-offset;
+
+@keyframes appear-from-bottom {
+
+  0% {
+    transform: translateY($appear-from-bottom-offset);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: .7;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.appear-from-bottom {
+  animation-name: appear-from-bottom;
+  animation-timing-function: cubic-bezier(.39,.58,.57,1);
+}

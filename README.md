@@ -1,5 +1,7 @@
 # Repaintless.css - making animations fast
 
+[![CDNJS](https://img.shields.io/cdnjs/v/Repaintless.css.svg)](https://cdnjs.com/libraries/Repaintless.css)
+
 Repaintless.css in a lightweight animation library that consists only of animations that don't cause reflows and repaints of a website when used correctly. The idea for a library came after seeing the talk by [Paul Lewis](https://twitter.com/aerotwist) on animations and FLIP technique. Basic idea is to remove transition from element, not to apply it while animating. It saves user a tiny lag before animation starts and feels super smooth. To understand the concept better you can read [a blog post on that](https://aerotwist.com/blog/flip-your-animations/) or at least this quote from the post:
 
 > The reason you can afford to do this relatively expensive precalculation is because there is a window of 100ms after someone interacts with your site where you’re able to do work without them noticing. If you’re inside that window users will feel like the site responded instantly! It’s only when things are moving that you need to maintain 60fps.

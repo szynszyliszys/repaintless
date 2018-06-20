@@ -6,6 +6,10 @@ Project uses [Semantic Versioning](http://semver.org/).
 ### Added
 - Animations for disappearing elements (fade-out + slide away).
 
+### Changed
+- Remove many `-webkit-` prefixes (automatically by Autoprefixer).
+- Mark Sass variables with the `!default` flag.
+
 ## [1.4.0] - 2016-04-5
 ### Added
 - CHANGELOG.md file.

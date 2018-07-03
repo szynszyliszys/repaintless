@@ -28,8 +28,8 @@ h2 {
   margin-left: -($element-side-size/2);
   width: $element-side-size;
   height: $element-side-size;
-  animation-play-state: paused;
   animation-iteration-count: infinite;
+  animation-play-state: running;
   opacity: .8;
 
   &.slide-from-right { background-color: $demo-item-red; }
@@ -65,6 +65,7 @@ h2 {
   }
 }
 
-.animation-running {
-  animation-play-state: running;
+/* When the button is visible, we don't want the animation to be played */
+#play-animation ~ .element-animated {
+  animation-play-state: paused;
 }

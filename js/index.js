@@ -8,10 +8,6 @@ $(document).ready(function () {
   $("#play-animation").on("click", function () {
     this.remove();
 
-    $(".main-container").find(".element-animated").each(function (){
-      this.classList.add("animation-running");
-    });
-
     allFilter.prop("checked", true);
   });
 

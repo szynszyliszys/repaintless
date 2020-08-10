@@ -3,7 +3,7 @@ $slide-top-bottom-offset: $default-offset/2;
 @keyframes slide-top-bottom {
 
   0% {
-    transform: translateY(-$slide-left-right-offset);
+    transform: translateY(-$slide-top-bottom-offset);
   }
 
   50% {
@@ -11,7 +11,7 @@ $slide-top-bottom-offset: $default-offset/2;
   }
 
   100% {
-    transform: translateY($slide-left-right-offset)
+    transform: translateY($slide-top-bottom-offset)
   }
 }
 

@@ -53,7 +53,7 @@ Default timing of an animation is one second. You can have an animation that has
 
 ## Customization
 
-For now there is no gulp task for that. To get few out of all animations you need to edit [repaintless.scss](https://github.com/szynszyliszys/repaintless/blob/master/app/scss/repaintless.scss) file and leave there @import declarations for wanted animations only. After that use gulp build task to create css file.
+For now there is no gulp task for that. To get few out of all animations you need to edit [repaintless.scss](https://github.com/szynszyliszys/repaintless/blob/master/repaintless-scss/repaintless.scss) file and leave there @import declarations for wanted animations only. After that use gulp build task to create css file.
 
 You can also easily change the offset value for animated elements. Each animation has its own scss  variable in the same file, right at the top. Names always follow the key $animation-name-offset: value;
 
